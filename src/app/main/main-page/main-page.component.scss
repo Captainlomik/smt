@@ -1,0 +1,16 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height:calc(100vh - 56px)
+}
+
+.filter-group{
+    width:20%;
+    background-color: lightblue;
+    padding: 10px;;
+}
+
+.card-group{
+width: 70%;
+}

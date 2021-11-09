@@ -1,1 +1,22 @@
 <app-header></app-header>
+<div class="main">
+  <div class="filter-group py-5">
+    <input type="text" class="form-control" placeholder="Поиск" aria-label="Search" [(ngModel)]="searchStr">
+
+  </div>
+  <div class="card-group justify-content-around py-5 ">
+    <div *ngFor="let lot of lots | mainSearch : searchStr">
+      <div class="card" style="width: 18rem;">
+        <a class="newsCard__cardTitle" [routerLink]="['/lot', lot.id]">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">{{lot.name}}</h5>
+            <p class="card-text">{{lot.description.substring(0, 50)}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div *ngIf="lots.length === 0 ">Товаров нет</div>
+  </div>
+</div>
