@@ -1,16 +1,27 @@
 .main {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height:calc(100vh - 56px)
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: calc(100vh - 56px)
 }
 
-.filter-group{
-    width:20%;
-    background-color: lightblue;
-    padding: 10px;;
+.filter-group {
+  width: 20%;
+  background-color: lightblue;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-.card-group{
-width: 70%;
+.form {
+  margin: 20px 0;
+
+  &:first-child{
+      margin: 0;
+  }
+}
+
+
+.card-group {
+  width: 70%;
 }

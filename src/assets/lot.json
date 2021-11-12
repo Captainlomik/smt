@@ -3,17 +3,26 @@
         {
            "id": 1, 
            "name":"Бумага 1",
-           "description":"Ценная бумага"
+           "description":"Ценная бумага",
+           "date":"2021-11-10",
+           "price":"100", 
+           "category":"coin"
         },
         {
             "id": 2, 
             "name":"Бумага 2",
-            "description":"Ценная бумага"
+            "description":"Ценная бумага",
+            "date":"2021-11-9",
+            "price":"1000",
+            "category":"bona"
          },
          {
-            "id": 2, 
+            "id": 3, 
             "name":"Бумага 3",
-            "description":"Ценная бумага"
+            "description":"Ценная бумага",
+            "date":"2021-11-11",
+            "price":"2000",
+            "category":"receipt"
          }
     ]
 }
