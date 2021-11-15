@@ -15,18 +15,18 @@ export class MainPageComponent implements OnInit {
 
 
   sortValue = [{ value: 'cheap', name: "Самое дешевое" }, { value: 'expendsive', name: "Самое дорогое" }, { value: 'new', name: "Новое" }]
-  categoryValue = [{ value: 'coin', name: 'Монета' }, { value: 'receipt', name: 'Чек' }, { value: 'bona', name: 'Бона' }]
+  categoryValue = [{ value: 'coin', name: 'Монета', chek:false }, { value: 'receipt', name: 'Чек', chek:false }, { value: 'bona', name: 'Бона', chek:false }]
   lots: Lot[] = []
   searchStr = ""
   sortItem: any = ""
-  isChecked: boolean = false
+  checked: boolean = false
 
 
   constructor(private lotService: LotService) { }
 
   ngOnInit(): void {
     this.getData()
-    console.log(this.isChecked)
+    this.checked = this.checked ? this.checked : false;
   }
 
   getData() {
@@ -59,6 +59,8 @@ export class MainPageComponent implements OnInit {
 
   }
 
-
+toToggle(item: any, item2:any){
+  console.log(item)
+}
 }
 

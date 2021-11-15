@@ -10,7 +10,7 @@
 
     <div class="py-2">Категория:</div>
     <div class="form-check" *ngFor="let category of categoryValue">
-      <input class="form-check-input" type="checkbox" [(ngModel)]="isChecked"  id="flexCheckDefault">
+      <input class="form-check-input" type="checkbox" [(ngModel)]="category.chek" (change)="toToggle(category.value, category.chek)"  >
       <label class="form-check-label" for="flexCheckDefault">
         {{category.name}}
       </label>
@@ -26,6 +26,7 @@
             <h5 class="card-title">{{lot.name}}</h5>
           </a>
           <p class="card-text">{{lot.description.substring(0, 50)}}</p>
+          <p class="card-text">{{lot.category}}</p>
           <p class="card-text">{{lot.price}}</p>
         </div>
 

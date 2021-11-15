@@ -13,6 +13,7 @@ import { HeaderComponent } from './main/header/header.component';
 import { LotDetailComponent } from './main/components/lot-detail/lot-detail.component';
 import { MainSearchPipe } from './shared/Pipes/main-search.pipe';
 import { SortPipe } from './shared/Pipes/sort.pipe';
+import { CategoryFilterComponent } from './main/components/category-filter/category-filter.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { SortPipe } from './shared/Pipes/sort.pipe';
     LotDetailComponent,
     MainSearchPipe,
     SortPipe,
+    CategoryFilterComponent,
   ],
   imports: [
     BrowserModule,
